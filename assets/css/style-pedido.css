@@ -1,0 +1,233 @@
+@import url('https://font.googleapis.com/css?family=Dancing+Script');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    background-image: url(../img/pieces-of-cake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    height: 120px;
+    margin-bottom: 80px;
+}
+
+.titulo{
+    margin-top: 32px;
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+}
+.titulo::after,.titulo::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: white;
+    top: 0.6em;
+}
+
+.titulo::after{
+    left: -140px;
+}
+
+.titulo::before{
+    right: -140px;
+}
+
+.subTitulo{
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0.2em 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#regForm{
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 820px;
+    height: 420px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+}
+
+.menuI{
+    margin-left: 55px;
+    width: 400px;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.menuD{
+    width: 400px;
+    padding: 0.5em;
+    text-align: left;
+    margin-top: -194px;
+    margin-left: 500px;
+}
+
+.campos{
+    margin: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 85%;
+    border: none;
+    border-bottom: 1px solid wheat;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.centrar{
+    margin: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 90%;
+}
+
+.centrarFrutas{
+    margin: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 50%;
+    margin-bottom: 62px;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] + label{
+    cursor: pointer;
+    color: white;
+}
+
+.check::before{
+    content: '';
+    background: transparent;
+    border: 3px solid #88c64b;
+    border-radius: 5px;
+    display: inline-block;
+    height: 12px;
+    margin-right: 5px;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 12px;
+}
+
+input[type=checkbox]:checked + label::before{
+    content: '✓';
+    font-size: 0.6em;
+    color: white;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.radios{
+    color: white;
+    font-size: 1em;
+    border: 1px solid #01cc65;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.radios::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border: 1px solid #01cc65;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked + .radios{
+    background-color: #01cc65;
+    color: white;
+}
+
+input[type=radio]:checked +.radios::before{
+    height: 16px;
+    width: 16px;
+    border: 10px solid white;
+    background-color: #01cc65;
+}
+
+input.invalid{
+    background-color: #ffdddd;
+    border-radius: 5px;
+}
+
+.tab{
+    display: none;
+}
+
+.step{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active{
+    opacity: 1;
+}
+
+.step.finish{
+    background-color: green;
+}
+
+.btn{
+    background: white;
+    border: 2px solid;
+    font: inherit;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+          --hover: #a560ff;
+}
+
+.botones{
+    margin: auto;
+    display: block;
+    width: 85%;
+}
+
+a{
+    text-decoration: none;
+}

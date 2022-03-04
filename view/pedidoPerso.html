@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style-pedido.css">
+    <title>Pedido</title>
+</head>
+
+<body>
+    <header id="titulo">
+        <h1 class="titulo">realizando pedido</h1>
+    </header>
+
+    <form id="regForm" action="">
+        <section>
+            <article class="tab">
+                <h2 class="subTitulo">DATOS DEL CLIENTE</h2>
+                <input type="text" class="campos" placeholder="Nombre">
+                <input type="text" class="campos" placeholder="Teléfono"
+                    onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+                <input type="email" class="campos" placeholder="Correo electronico">
+            </article>
+            <article class="tab">
+                <h2 class="subTitulo">ELEGIR PASTEL</h2>
+                <article class="menuI">
+                    <input type="radio" id="3l" name="pastel" value="3 leches">
+                    <label for="3l" class="radios">3 leches</label>
+                    <input type="radio" id="3lf" name="pastel" value="3 leches con fruta">
+                    <label for="3lf" class="radios">3 leches con fruta</label>
+                    <input type="radio" id="tpiña" name="pastel" value="Tropical con piña">
+                    <label for="tpiña" class="radios">Tropical con piña</label>
+                    <input type="radio" id="pay" name="pastel" value="Pay de queso con fruta">
+                    <label for="pay" class="radios">Pay de queso con fruta</label>
+                </article>
+                <article class="menuD">
+                    <input type="radio" id="3lc" name="pastel" value="3 leches con chocolate">
+                    <label for="3lc" class="radios">3 leches con chocolate</label>
+                    <input type="radio" id="oreo" name="pastel" value="Chocolate con Oreo">
+                    <label for="oreo" class="radios">Chocolate con Oreo</label>
+                    <input type="radio" id="bombon" name="pastel" value="Chocolate con bombón">
+                    <label for="bombon" class="radios">Chocolate con bombón</label>
+                    <input type="radio" id="poli" name="pastel" value="Napolitano">
+                    <label for="poli" class="radios">Napolitano</label>
+                </article>
+            </article>
+            <article class="tab">
+                <article class="centrar">
+                    <h2 class="subTitulo">ELEGIR DECORACIONES</h2>
+                    <input type="checkbox" id="galletas" name="galletas" value="Galleta">
+                    <label for="galletas" class="check">Galleta</label>
+                    <input type="checkbox" id="bombones" name="bombones" value="Bombones">
+                    <label for="bombones" class="check">Bombones</label>
+                    <input type="checkbox" id="chantilli" name="chantilli" value="Crema chantilli">
+                    <label for="chantilli" class="check">Crema chantilli</label>
+                    <input type="checkbox" id="coco" name="coco" value="Cubierta de coco">
+                    <label for="coco" class="check">Cubierta de coco</label>
+                    <input type="checkbox" id="chocolate" name="chocolate" value="Cubierta de chocolate">
+                    <label for="chocolate" class="check">Cubierta de chocolate</label>
+                </article>
+                <article class="centrarFrutas">
+                    <h2 class="subTitulo">FRUTAS</h2>
+                    <input type="checkbox" id="fresa" name="fresa" value="Fresas">
+                    <label for="fresa" class="check">Fresas</label>
+                    <input type="checkbox" id="mango" name="mango" value="Mango">
+                    <label for="mango" class="check">Mango</label>
+                    <input type="checkbox" id="piña" name="piña" value="Piña">
+                    <label for="piña" class="check">Piña</label>
+                    <input type="checkbox" id="uva" name="uva" value="Uvas">
+                    <label for="uva" class="check">Uvas</label>
+                    <input type="checkbox" id="kiwi" name="kiwi" value="Kiwi">
+                    <label for="kiwi" class="check">Kiwi</label>
+                </article>
+            </article>
+            <article class="botones">
+                <a href="../index.html">
+                    <button type="button" id="menuBtn" class="btn">Ir al Menu</button>
+                </a>
+                <button type="button" id="prevBtn" class="btn" onclick="nextPrev(-1)">Regresar</button>
+                <button type="button" id="nextBtn" class="btn" onclick="nextPrev(1)"></button>
+            </article>
+
+            <article style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </article>
+        </section>
+    </form>
+</body>
+
+<script src="../assets/js/pedidoStep.js"></script>
+
+</html>

@@ -1,0 +1,214 @@
+@import url('https://font.googleapis.com/css?family=Dancing+Script');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    background-image: url(../img/menuprincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 280px;
+}
+
+.contenedor{
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 820px;
+    height: 420px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+}
+
+.menuPas{
+    float: left;
+    width: 400px;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.menuPasC{
+    float: right;
+    width: 400px;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.menuDec{
+    margin: auto;
+    margin-top: 15px;
+    width: 400px;
+    padding: 0.5em;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.8);
+}
+
+.titulo{
+    margin-top: 25px;
+    display: inline-block;
+    position: relative;
+}
+.titulo::after,.titulo::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: black;
+    top: 0.6em;
+}
+
+.titulo::after{
+    left: -140px;
+}
+
+.titulo::before{
+    right: -140px;
+}
+
+.subTitulo{
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0.2em 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+h2{
+    width: 85%;
+    display: block;
+    margin: auto;
+    text-align: left;
+    outline: none;
+    padding: 0.2em 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+h3, p{
+    margin: auto;
+    margin-bottom: 5px;
+    width: 85%;
+    display: block;
+    border-bottom: wheat thin solid;
+    text-align: left;
+    outline: none;
+    padding: 0.2em 0;
+    font-size: 0.9em;
+    color: white;
+}
+
+h4{
+    margin-top: -20px;
+    text-align: right;
+    color: white;
+}
+
+li {
+    margin: auto;
+    text-align: center;
+    padding: 0.1em;
+    font-size: 0.8em;
+    color: white;
+    overflow: hidden;
+}
+
+.botones{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+.btns{
+    border: 2px solid;
+    font: inherit;
+    padding: 0.5em 1em;
+    margin-left: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btns:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+          --hover: #a560ff;
+}
+
+footer{
+    background: rgba(0,0,0,0.8);
+    padding: 1em 0;
+    height: auto;
+}
+
+.foot{
+    align-items: flex-end;
+}
+
+dl, dd{
+    margin-left: 15px;
+    text-align: left;
+    font-size: 0.9em;
+    color: white;
+    padding: 5px 30px 1px;
+    font-weight: lighter;
+    margin-bottom: -5px;
+}
+
+dl{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div{
+    float: right;
+    width: 400px;
+    margin-right: 15px;
+}
+
+label{
+    color: white;
+}
+
+.btn-inv{
+    background: transparent;
+    border: 2px solid;
+    font: inherit;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-inv:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+            --hover: white;
+  }

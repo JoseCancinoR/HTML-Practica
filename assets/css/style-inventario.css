@@ -1,0 +1,109 @@
+@import url('https://font.googleapis.com/css?family=Dancing+Script');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    background-image: url(../img/repostero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    height: 120px;
+    margin-bottom: 80px;
+}
+
+.titulo{
+    margin-top: 32px;
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+}
+.titulo::after,.titulo::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: white;
+    top: 0.6em;
+}
+
+.titulo::after{
+    left: -140px;
+}
+
+.titulo::before{
+    right: -140px;
+}
+
+input{
+    float: right;
+    margin-bottom: 25px;
+    display: block;
+    width: 40%;
+    border-radius: 8px;
+    border-bottom: 1px solid wheat;
+    background: rgba(0,0,0,0.8);
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.contenedor{
+    width: 60%;
+    margin: auto;
+}
+  
+.table{
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.table tr{
+    background: rgba(0,0,0,0.8);
+    border: solid 1px white;
+}
+
+.table th, .table td{
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.table thead th{ 
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.8);
+}
+
+.btn{
+    float: right;
+    margin-bottom: 25px;
+    display: block;
+    width: 20%;
+    border-radius: 8px;
+    border-bottom: 1px solid wheat;
+    background: rgba(0,0,0,0.8);
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+            --hover: #c2bec7;
+  }
